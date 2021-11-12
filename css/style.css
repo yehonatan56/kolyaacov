@@ -1,0 +1,237 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  direction: rtl;
+  font-family: 'Bellefair', serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: green;
+}
+
+.upBtn {
+  position: fixed;
+  top: 50%;
+  background-color: skyblue;
+  padding: 20px;
+  color: #fff;
+  left: 0;
+  border-radius: 5px;
+}
+
+header {
+  height: 200px;
+  background: #fff;
+  overflow: hidden;
+}
+
+@media (min-width: 800px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (max-width: 799px) {
+  header {
+    height: 222px;
+  }
+}
+
+header .logo img {
+  height: 200px;
+}
+
+@media (min-width: 800px) {
+  header #burger {
+    display: none;
+  }
+}
+
+@media (max-width: 799px) {
+  header #burger {
+    display: block;
+    color: blue;
+  }
+}
+
+@media (min-width: 800px) {
+  header nav {
+    display: block;
+  }
+}
+
+@media (max-width: 799px) {
+  header nav {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    left: 98px;
+  }
+}
+
+header nav ul {
+  list-style: none;
+  z-index: 1;
+}
+
+@media (min-width: 800px) {
+  header nav ul {
+    display: flex;
+  }
+}
+
+header nav ul button {
+  background-color: skyblue;
+  color: #fff;
+  padding: 20px;
+  z-index: 1;
+}
+
+main {
+  width: 100%;
+}
+
+main .about {
+  background: url("../images/bg.jpg");
+  color: blue;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (min-width: 800px) {
+  main .about {
+    display: flex;
+  }
+}
+
+@media (max-width: 799px) {
+  main .about {
+    display: block;
+  }
+}
+
+@media (min-width: 800px) {
+  main .about p {
+    width: 500px;
+  }
+}
+
+@media (max-width: 799px) {
+  main .about p {
+    width: 200px;
+  }
+}
+
+@media (min-width: 800px) {
+  main .about .images img {
+    width: 800px;
+  }
+}
+
+@media (max-width: 799px) {
+  main .about .images img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+main .articals {
+  width: 100%;
+  background-color: #fff;
+  padding-right: 50px;
+}
+
+@media (min-width: 800px) {
+  main .articals div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (max-width: 799px) {
+  main .articals div {
+    display: block;
+  }
+}
+
+main .articals div img {
+  width: 200px;
+  height: 200px;
+}
+
+main .songs {
+  width: 100%;
+  background-color: #fff;
+  padding-right: 50px;
+}
+
+@media (min-width: 800px) {
+  main .songs div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (max-width: 799px) {
+  main .songs div {
+    display: block;
+  }
+}
+
+main .songs div video {
+  width: 200px;
+  height: 200px;
+}
+
+main .project {
+  width: 100%;
+  background-color: #fff;
+}
+
+@media (min-width: 800px) {
+  main .project section {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 799px) {
+  main .project section {
+    display: block;
+  }
+}
+
+@media (max-width: 799px) {
+  main .project div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+main .project p {
+  width: 150px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 25px;
+}
+
+main .contact {
+  width: 100%;
+  background-color: #fff;
+}
+
+main .contact ul {
+  list-style: none;
+  color: blue;
+}
+/*# sourceMappingURL=style.css.map */
