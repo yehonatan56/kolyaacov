@@ -212,7 +212,7 @@ main .project {
 
 @media (max-width: 799px) {
   main .project iframe {
-    width: 200px;
+    width: 300px;
   }
 }
 
