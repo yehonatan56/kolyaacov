@@ -207,7 +207,7 @@ main .project {
 @media (max-width: 799px) {
   main .project section {
     display: block;
-    align-items: center;
+    text-align: center;
   }
 }
 
